@@ -21,7 +21,9 @@ with open(model + ".yaml", 'r') as stream:
         print(exc)
 
 # Reading Schema
-template_name = sys.argv[3]
-template = open(template_name + ".hix.html", "r")
+template = sys.argv[3]
+file = open(template + ".hix.html", "r")
 
-print(template.raw)
+print(file.read())
+
+file.close()
