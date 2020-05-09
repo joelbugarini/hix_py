@@ -1,0 +1,8 @@
+hix_model: user
+properties:
+  id: integer
+  name: string
+  last_name: string
+  title: string
+  born: date
+  active: boolean
