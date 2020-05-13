@@ -24,7 +24,7 @@ with open(model + ".yaml", 'r') as stream:
 # Reading Schema
 template = sys.argv[3]
 file = open(template + ".hix.html", "r")
-print(file.read())
+# print(file.read())
+result = lexer.execute(file.read())
 file.close()
 
-lexer.execute(file)
