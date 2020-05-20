@@ -4,7 +4,6 @@
 
 def execute(template):
     result = []
-    token_list = get_tokens()
     gibberish = ""
     i = 0
     while i < len(template):
