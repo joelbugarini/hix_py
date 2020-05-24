@@ -7,10 +7,7 @@ class ParserNode:
         self.children = []
 
     def add(self, obj):
-        if obj.t_type == "root":
-            raise NameError("Root can't be added as a child")
-        if obj.t_type == "gibberish":
-            self.children.append(obj)
+        self.children.append(obj)
 
     def render(self):
         if len(self.children) == 0:
