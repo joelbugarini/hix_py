@@ -1,8 +1,10 @@
 # The idea here will be to create a tree for the generator to work
 import node
 
-
 def execute(lexer_result):
-    root = node.ParserNode("", "", "root", "root")
-    for res in lexer_result:
-        root.add(node.ParserNode(res.))
+    for x in lexer_result:
+        print(x[0] + " " +x[2])
+
+#def syntax_checker(lexer_result):
+#    for token in lexer_result:
+
